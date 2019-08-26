@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img id="anh" src="./pic_bulboff.gif" onclick="doianh();" alt="">
+    <script>
+        var a = 0;
+
+        function doianh() {
+            a += 1;
+            if (a % 2 == 0) {
+                document.getElementById('anh').src = 'pic_bulboff.gif';
+            } else {
+                document.getElementById('anh').src = 'pic_bulbon.gif';
+            }
+            console.log(a);
+        }
+    </script>
+</body>
+
+</html>
